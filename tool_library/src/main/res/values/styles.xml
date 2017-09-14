@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 圆角矩形 椭圆的自定义属性
+ corner_radius : 边角弧度。这个值越大，圆角越明显
+ border_width  : 边框宽度
+ border_color  : 边框颜色
+ mutate_background  :   背景是否变化(这里在demo中改变不明显)
+ oval          :   是否以椭圆形式显示  true为以椭圆形式显示   flase以矩形形式显示
+-->
+    <declare-styleable name="RoundedImageView">
+        <attr name="corner_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="mutate_background" format="boolean" />
+        <attr name="oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+</resources>

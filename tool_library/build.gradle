@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+
+
+    defaultConfig {
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:26.0.2'
+    testImplementation 'junit:junit:4.12'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'io.reactivex.rxjava2:rxjava:2.1.0'
+    //权限管理
+    compile 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.4@aar'
+    //图片获取
+    compile 'com.github.bumptech.glide:glide:4.0.0'
+    //LRecyclerView 下拉刷新 加载更多
+    compile 'com.github.jdsjlzx:LRecyclerView:1.4.3'
+
+}
+//项目主页
+def siteUrl = 'https://github.com/scalling/commontool'
+publish {
+    repoName = 'maven'
+    userOrg = 'zmcat'
+    groupId = 'zm.com.tool.library'
+    artifactId = 'tool_library'
+    publishVersion = '1.0.6'
+    desc = '普通工具类'
+    website = siteUrl
+}
+tasks.withType(Javadoc) {//防止编码问题
+    options.addStringOption('Xdoclint:none', '-quiet')
+    options.addStringOption('encoding', 'UTF-8')
+    options.addStringOption('charSet', 'UTF-8')
+}
