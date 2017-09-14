@@ -9,7 +9,7 @@ android {
         minSdkVersion 15
         targetSdkVersion 26
         versionCode 1
-        versionName "1.0.0"
+        versionName "1.0.1"
 
 
     }
@@ -47,7 +47,7 @@ publish {
     userOrg = 'zmcat'
     groupId = 'com.zm.tool.library'
     artifactId = 'tool_library'
-    publishVersion = '1.0.6'
+    publishVersion = '1.0.1'
     desc = '封装常用普通工具类'
     website = siteUrl
 }
