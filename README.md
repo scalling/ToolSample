@@ -6,13 +6,13 @@
 * Gradle 
    
    ```
-  compile 'zm.com.tool.library:tool_library:1.0.1'
+  compile 'com.zm.tool.library:tool_library:1.0.1'
    ```
 * Maven
 	
 	```
 	<dependency>
-      <groupId>zm.com.tool.library</groupId>
+      <groupId>com.zm.tool.library</groupId>
       <artifactId>tool_library</artifactId>
       <version>1.0.1</version>
       <type>pom</type>

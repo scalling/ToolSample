@@ -45,10 +45,10 @@ def siteUrl = 'https://github.com/scalling/ToolSample'
 publish {
     repoName = 'maven'
     userOrg = 'zmcat'
-    groupId = 'zm.com.tool.library'
+    groupId = 'com.zm.tool.library'
     artifactId = 'tool_library'
     publishVersion = '1.0.6'
-    desc = '普通工具类'
+    desc = '封装常用普通工具类'
     website = siteUrl
 }
 tasks.withType(Javadoc) {//防止编码问题
