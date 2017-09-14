@@ -6,15 +6,15 @@
 * Gradle 
    
    ```
-  compile 'com.zm.commontool:commontool:1.0.6'
+  compile 'zm.com.tool.library:tool_library:1.0.1'
    ```
 * Maven
 	
 	```
 	<dependency>
-      <groupId>com.zm.commontool</groupId>
-      <artifactId>commontool</artifactId>
-      <version>1.0.6</version>
+      <groupId>zm.com.tool.library</groupId>
+      <artifactId>tool_library</artifactId>
+      <version>1.0.1</version>
       <type>pom</type>
     </dependency>
 	
@@ -42,5 +42,5 @@
       <uses-permission android:name="android.permission.CAMERA" /><!--打开摄像头-->
         
 ## 具体用法请查看DEMO
->[demo](https://github.com/scalling/commontool/tree/master/app)
+>[MainActivity](https://github.com/scalling/ToolSample/blob/master/app/src/main/java/com/zm/tool/sample/MainActivity.java)
         
