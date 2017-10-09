@@ -22,7 +22,7 @@
 
 
 
-
+    
 ##common 具备功能
         2.下载安装apk兼容7.0
         3.rxpermissions2动态权限管理(0.9.4)
